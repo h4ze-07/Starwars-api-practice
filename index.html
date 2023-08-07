@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <button onclick="fetchData('people')" id="people">People</button>
+            <button onclick="fetchData('planets')" id="planets">Planets</button>
+            <button onclick="fetchData('starships')" id="starships">Starships</button>
+        </nav>
+    </header>
+    <main class="main">
+
+        <div id="loader" class="loader hide">
+            <img src="loading-gif-png-5.gif" alt="loading" />
+        </div>
+
+        <section class="cards">
+        </section>
+        
+    </main>
+    <section class="btns-container">
+        <div class="btns">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>
+            &copy; 2023. All rights reserved
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
